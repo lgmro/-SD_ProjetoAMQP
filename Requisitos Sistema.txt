@@ -7,3 +7,5 @@
 4 - Você pode usar um terminal para execucar a aplicação. Ex.: CMD, PowerShell, Shell;
 
 5 - Para o sistema operacional, pode-se usar o mac os, windows ou sistemas linux. Testamos no windows e no ubuntu;
+
+6- Test
