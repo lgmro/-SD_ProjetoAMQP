@@ -14,7 +14,7 @@ def main():
     channel.queue_bind(exchange="messagens_matriz", queue=fila.method.queue)
 
     def callback(ch, method, properties, body):
-        print(f"FILIAL 05 RECEBEU A SEGUINTE MENSAGEM DA MATRIZ:\n {body}")
+        print(f"MATRIZ ENVIOU A SEGUINTE MENSAGEM:\n {body}\n")
 
     channel.basic_consume(queue=fila.method.queue, auto_ack=True, on_message_callback=callback)
 

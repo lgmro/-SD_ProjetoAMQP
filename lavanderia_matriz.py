@@ -21,11 +21,11 @@ def main():
   	''')
 
     for i in range(1,6):
-        print(f"Informe a mensagem 0{i}:")
-        mensagem = input(f"Mensagem 0{i} > ")
-        mensagem_matriz = f"Mensagem matriz 0{i}: {mensagem}"
+        mensagem = f"Cliente solicitou o uso de uma maquina na lavanderia 0{i}"
+        mensagem_matriz = f"Mensagem 0{i}: {mensagem}"
         channel.basic_publish(exchange="messagens_matriz", routing_key="", body=mensagem_matriz)
-        print(f"{mensagem_matriz}")
+        print(f"Enviado a mensagem 0{i} -> {mensagem}")
+      
 
     conexao.close()
 

@@ -10,7 +10,7 @@
 
 6 - Abra outro terminal e execute a matriz. Ex.: py lavanderia_matriz.py (Windows), python3 lavanderia_matriz.py (Ubuntu);
 
-7 - A matriz receberá 5 mensagens escritas por você e enviará uma de cada vez para cada filial e depois será finalizada;
+7 - A matriz enviará 5 mensagens uma de cada vez para cada filial e depois o cliente será finalizado;
 
 8 - Você notará que nos terminais das filiais, será exibida as mensagens enviada pela matriz;
 
