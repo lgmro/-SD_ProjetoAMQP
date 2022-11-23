@@ -1,9 +1,18 @@
+Requisitos para instalação:
 1 - É necessário ter o Python 3 instalado. Usamos a versão 3.10.6;
 
-2 - Após ter instalado o python, use o pip para instalar a biblioteca "Pika". Se você tiver mais de uma versão do python em sua máquina, tenha atenção à qual versão do python a biblioteca "Pika" será instalada na sua máquina e use essa versão para executar a aplicação. Comando: pip install pika. 
+Mais informações de como instalar python aqui: https://www.python.org/downloads/
 
-3 - É necessário instalar o RabbitMQ. Segue link: https://www.rabbitmq.com/download.html. Se você tiver o docker no seu computador, basta usar o seguinte comando: docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management (dependendo de como foi instalado o docker na sua máquina, talvez precise usar o "sudo" antes do comando e colocar a sua senha);
+2 -Após ter instalado o python, use o pip para instalar a biblioteca "pika". Se você tiver mais de uma versão do python em sua máquina, tenha atenção à qual versão do python a biblioteca "pika" será instalada na sua máquina e use essa versão para executar a aplicação. Comandos que você pode usar para instalar: pip install pika/ pip3 install pika/ python3 -m pip install pika;
+
+Mais informações de como instalar o pika aqui: https://pika.readthedocs.io/en/stable/
+
+3 - É necessário instalar o RabbitMQ.
+
+Segue link: https://www.rabbitmq.com/download.html 
+
+Se você tiver o docker no seu computador, basta usar o seguinte comando: docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management (dependendo de como foi instalado o docker na sua máquina, talvez precise usar o "sudo" antes do comando e colocar a sua senha)
 
 4 - Você pode usar um terminal para execucar a aplicação. Ex.: CMD, PowerShell, Shell;
 
-5 - Para o sistema operacional, pode-se usar o mac os, windows ou sistemas linux. Testamos no windows e no ubuntu;
+Para o sistema operacional, pode-se usar o mac os, windows ou sistemas linux. Testamos no ubuntu e windows.
