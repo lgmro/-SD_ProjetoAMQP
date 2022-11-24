@@ -42,11 +42,15 @@
 
 #### 3 - Caso você for usar a mesma máquina para executar os 7 códigos-fonte (1 da matriz e 6 das filiais), não precisa realizar nenhuma alteração HOST(IP), pois usamos "localhost" no código e o python geralmente conseguira acessar o RabbitMQ. Mas caso você tenha alguma configuração diferente no seu RabbitMQ, é importante fica atentando ao enderenço e se necessário mudá-lo nos códigos-fonte da matriz e das filiais;
 
-#### 4 - Executando a aplicação na mesma máquina, você precisará abrir 6 terminais na pasta do projeto e execute primeiramente os códigos-fontes das filiais. Você pode usar o comando: py lavanderia_filial01.py (Windows) ou python3 lavanderia_filial01.py (Ubuntu);
+#### 4 - Executando a aplicação na mesma máquina, você precisará abrir 6 terminais na pasta do projeto e execute primeiramente os códigos-fontes das filiais. Você pode usar o comando: 
+    py lavanderia_filial01.py (Windows) ou
+    python lavanderia_filial01.py (Windows) ou
+    python3 lavanderia_filial01.py (Ubuntu);
 
 #### 5 - Após as 6 fialias abertas, você verá que será exibido uma texto informando o número da filial e que ela está aguardando mensagens da matriz;
 
-#### 6 - Abra outro terminal e execute a matriz. Ex.: py lavanderia_matriz.py (Windows), python3 lavanderia_matriz.py (Ubuntu);
+#### 6 - Abra outro terminal e execute a matriz. 
+    Ex.: py lavanderia_matriz.py (Windows), python lavanderia_matriz.py (Windows), python3 lavanderia_matriz.py (Ubuntu);
 
 #### 7 - A matriz enviará 5 mensagens uma de cada vez para cada filial e depois o cliente será finalizado;
 
