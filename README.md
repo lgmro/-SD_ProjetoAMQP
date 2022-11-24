@@ -12,8 +12,12 @@
 
     Mais informações de como instalar python aqui: https://www.python.org/downloads/
 
-#### Após ter instalado o python, use o pip para instalar a biblioteca "pika". Se você tiver mais de uma versão do python em sua máquina, tenha atenção à qual versão do python a biblioteca "pika" será instalada na sua máquina e use essa versão para executar a aplicação. Comandos que você pode usar para instalar: pip install pika/ pip3 install pika/ python3 -m pip install pika;
+#### Após ter instalado o python, use o pip para instalar a biblioteca "pika". Se você tiver mais de uma versão do python em sua máquina, tenha atenção à qual versão do python a biblioteca "pika" será instalada na sua máquina e use essa versão para executar a aplicação. Segue abaixo comandos que você pode usar para instalar: 
 
+    pip install pika 
+    pip3 install pika
+    python3 -m pip install pika;
+    
     Mais informações de como instalar o pika aqui: https://pika.readthedocs.io/en/stable/
 
 #### É necessário instalar o RabbitMQ.
