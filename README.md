@@ -57,3 +57,33 @@
 #### 8 - Você notará que nos terminais das filiais, será exibida as mensagens enviada pela matriz;
 
 #### 9 - Caso você queirá enviar mais cinco mensagens, é só iniciar a matriz novamente e enviar mais mensagens.
+
+## Tutorial de uso das aplicações:
+#### 1 - Vamos executar o RabbitMQ. Aqui usamos o docker: 
+
+<div align = "center">
+    <img src= "https://user-images.githubusercontent.com/84135761/203670937-170eeaf2-92eb-4c12-b916-2ef9c1e0c4d8.png" width = "800px"/>
+</div>
+
+#### 2 - Agora vamos executar as lavanderias: lavanderia_filial01.py, lavanderia_filial02.py, lavanderia_filial03.py, lavanderia_filial04.py, lavanderia_filial05.py, lavanderia_filial06.py. 
+<div align = "center">
+    <img src= "https://user-images.githubusercontent.com/84135761/203670934-1c0e3302-f42e-4a84-a3da-17b62d1584ed.png" width = "800px"/>
+</div>
+
+#### 3 - Acessando o RabbitMQ, você verá que na opção de "Connections" será possível vê as 6 lavanderias conectadas:
+<div align = "center">
+    <img src= "https://user-images.githubusercontent.com/84135761/203670933-04d60de5-aa08-4b4d-914b-d3bc9a8a3f1d.png" width = "800px"/>
+</div>
+
+#### 4 - Vamos executar a lavanderia_matriz.py para enviar as 5 mensagens. Você perceberá que após enviar as mensagens a matriz é encerrada. Se quiser enviar mais mensagens é só executar a lavanderia_matriz.py novamente:
+<div align = "center">
+    <img src= "https://user-images.githubusercontent.com/84135761/203670929-3ee05eee-d14e-4993-86a1-59463f156aa7.png" width = "800px"/>
+</div>
+
+#### 5 - Perceba que as 6 lavanderias recebeu as 5 mensagens:
+<div align = "center">
+    <img src= "https://user-images.githubusercontent.com/84135761/203670928-e19cd3c8-6b48-499d-b635-f03b64b83b87.png" width = "800px"/>
+</div>
+
+
+#### Obs.: Para finalizar as lavanderias, você pode usar o comando "CTRL + C".
