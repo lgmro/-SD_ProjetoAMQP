@@ -36,7 +36,7 @@
 
 
 ## Instrução para instalação:
-#### 1 - Baixe a pasta do projeto;
+#### 1 - Baixe a pasta do projeto pelo GitHub ou clone o projeto com o git clone. A versão mais atualizada está disponível na branch main;
 
 #### 2 - Rode o RabbitMQ, com o docker ou instalado na sua máquina. Tenha atenção ao enderenço do RabbitMQ. Usando o docker, com o comando citado acima, acessamos o RabbitMQ com o seguinte enderenço: http://localhost:15672/. Geralmente o Username é: guest e o password também é: guest;
 
