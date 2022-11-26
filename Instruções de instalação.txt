@@ -2,18 +2,22 @@
 
 2 - Rode o RabbitMQ, com o docker ou instalado na sua máquina. Tenha atenção ao enderenço do RabbitMQ. Usando o docker, com o comando citado acima, acessamos o RabbitMQ com o seguinte enderenço: http://localhost:15672/. Geralmente o Username é: guest e o password também é: guest;
 
-3 - Caso você for usar a mesma máquina para executar os 7 códigos-fonte (1 da matriz e 6 das filiais), não precisa realizar nenhuma alteração HOST(IP), pois usamos "localhost" no código e o python geralmente conseguira acessar o RabbitMQ. Mas caso você tenha alguma configuração diferente no seu RabbitMQ, é importante fica atentando ao enderenço e se necessário mudá-lo nos códigos-fonte da matriz e das filiais;
+3 - Caso você for usar a mesma máquina para executar os 8 códigos-fonte (1 da matriz, 1 do ambiente e 6 das filiais), não precisa realizar nenhuma alteração HOST(IP), pois usamos "localhost" no código e o python geralmente conseguira acessar o RabbitMQ. Mas caso você tenha alguma configuração diferente no seu RabbitMQ, é importante fica atentando ao enderenço e se necessário mudá-lo nos códigos-fonte da matriz, do ambiente e das filiais;
+ 3.1 - Obs.: Recomendamos que você olhe no seu RabbitMQ na aba de Queues, se não existe filas com o mesmo nome das do código fonte do lavanderia_ambiente.py. Caso tenha seria interessante deletá-las, se for a primeira vez que executa essa aplicação.
 
-4 - Executando a aplicação na mesma máquina, você precisará abrir 6 terminais na pasta do projeto e execute primeiramente os códigos-fontes das filiais. Você pode usar o comando: 
+4 - Abra um terminal e execute o código-fote do ambiente, ele será responsável por criar as filas das filiais e associá-las à "exchange" da matriz no RabbitMQ. Verifique se as 6 filas foram criadas no RabbitMQ na aba de Queues. Você pode usar os seguintes comandos de acordo com o seu sistema operacional para executar o código-fote do ambiente: 
  4.1 - py lavanderia_filial01.py (Windows) ou python lavanderia_fialial01.py (Windows) ou python3 lavanderia_filial01.py (Ubuntu);
+ 
+5 - Agora, você precisará abrir 6 terminais na pasta do projeto, para executar os códigos-fontes das filiais. Você pode executá-los todos de uma vez ou você pode ir abrindo conforme o que você preferir, pois mesmo que a matriz envie mensagens sem que um dos clientes esteja conectado, assim que o mesmo se conectar ele receberá a mensagens que ele não visualizou. Você pode usar os seguintes comandos de acordo com o seu sistema operacional para executar as filiais (lembre-se de mudar a parte "lavanderia_filial01.py" de acordo com o nome do arquivo do código de cada filial):
+ 5.1 - Ex.: py lavanderia_filial01.py (Windows) ou python lavanderia_filial01.py (Windows) ou python3 lavanderia_filial01.py (Ubuntu);
 
-5 - Após as 6 fialias abertas, você verá que será exibido uma texto informando o número da filial e que ela está aguardando mensagens da matriz;
+6 - Quando você abrir as filias, você verá que será exibido uma texto informando o número da filial e que ela está aguardando mensagens da matriz. Caso a matriz já tenha publicado alguma mensagem ela também irá exibir;
 
-6 - Abra outro terminal e execute a matriz. 
+7 - Abra outro terminal e execute a matriz. Perceba que caso uma das filiais não esteja executando, a fila do mesmo no ambiente do RabbitMQ, irá mostrar a quantidade de mensagens que ainda precisam ser lidas. Você pode usar os seguintes comandos de acordo com o seu sistema operacional para executar o código-fote da matriz: 
   6.1 - Ex.: py lavanderia_matriz.py (Windows), python lavanderia_matriz.py (Windows), python3 lavanderia_matriz.py (Ubuntu);
 
-7 - A matriz enviará 5 mensagens uma de cada vez para cada filial e depois o cliente da matriz será finalizado;
+8 - A matriz enviará 5 mensagens uma de cada vez para cada filial e depois o cliente da matriz será finalizado;
 
-8 - Você notará que nos terminais das filiais, será exibida as mensagens enviada pela matriz;
+9 - Você notará que nos terminais das filiais, será exibida as mensagens enviada pela matriz;
 
-9 - Caso você queirá enviar mais cinco mensagens, é só iniciar a matriz novamente e enviar mais mensagens.
+10 - Caso você queirá enviar mais cinco mensagens, é só iniciar a matriz novamente e enviar mais mensagens.
