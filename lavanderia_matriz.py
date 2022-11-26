@@ -28,7 +28,6 @@ def main():
         channel.basic_publish(exchange="messagens_matriz", routing_key="", body=mensagem_matriz)
         print(f"Enviado a mensagem 0{i} -> {mensagem}")
       
-
     conexao.close()
 
 main()

@@ -7,16 +7,12 @@ def main():
 
     channel = conexao.channel()
 
-    channel.exchange_declare(exchange="messagens_matriz", exchange_type="fanout")
-
-    fila = channel.queue_declare(queue="", exclusive=True)
-
-    channel.queue_bind(exchange="messagens_matriz", queue=fila.method.queue)
+    nomeFilaLavanderia03 = "fila_lavanderia_filial03"
 
     def callback(ch, method, properties, body):
         print(f"MATRIZ ENVIOU A SEGUINTE MENSAGEM:\n {body}\n")
 
-    channel.basic_consume(queue=fila.method.queue, auto_ack=True, on_message_callback=callback)
+    channel.basic_consume(queue=nomeFilaLavanderia03, auto_ack=True, on_message_callback=callback)
 
 
     print('''
