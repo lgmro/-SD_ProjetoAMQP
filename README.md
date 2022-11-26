@@ -59,11 +59,11 @@
 #### 7 - Abra outro terminal e execute a matriz. Perceba que caso uma das filiais não esteja executando, a fila do mesmo no ambiente do RabbitMQ, irá mostrar a quantidade de mensagens que ainda precisam ser lidas. Você pode usar os seguintes comandos de acordo com o seu sistema operacional para executar o código-fote da matriz:
     Ex.: py lavanderia_matriz.py (Windows), python lavanderia_matriz.py (Windows), python3 lavanderia_matriz.py (Ubuntu);
 
-#### 7 - A matriz enviará 5 mensagens uma de cada vez para cada filial e depois o cliente será finalizado;
+#### 8 - A matriz enviará 5 mensagens uma de cada vez para cada filial e depois o cliente será finalizado;
 
-#### 8 - Você notará que nos terminais das filiais, será exibida as mensagens enviada pela matriz;
+#### 9 - Você notará que nos terminais das filiais, será exibida as mensagens enviada pela matriz;
 
-#### 9 - Caso você queirá enviar mais cinco mensagens, é só iniciar a matriz novamente e enviar mais mensagens.
+#### 10 - Caso você queirá enviar mais cinco mensagens, é só iniciar a matriz novamente e enviar mais mensagens.
 
 ## Tutorial de uso das aplicações com imagens:
 #### 1 - Vamos executar o RabbitMQ. Aqui usamos o docker: 
